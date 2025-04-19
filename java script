@@ -1,0 +1,20 @@
+// Change text content dynamically when the button is clicked
+document.getElementById('change-text-btn').addEventListener('click', function() {
+    const introText = document.getElementById('intro-text');
+    introText.textContent = "The text has been dynamically changed!";
+});
+
+// Modify CSS styles via JavaScript when the button is clicked
+document.getElementById('toggle-style-btn').addEventListener('click', function() {
+    const introText = document.getElementById('intro-text');
+    introText.style.color = introText.style.color === 'red' ? 'blue' : 'red';
+    introText.style.fontSize = introText.style.fontSize === '20px' ? '30px' : '20px';
+});
+
+// Add or remove an element when a button is clicked
+document.getElementById('add-element-btn').addEventListener('click', function() {
+    const container = document.getElementById('new-element-container');
+    const newElement = document.createElement('p');
+    newElement.textContent = "This is a newly added paragraph.";
+    container.appendChild(newElement);
+});
